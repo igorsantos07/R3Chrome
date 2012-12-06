@@ -1,0 +1,27 @@
+body {
+	font-family: sans-serif;
+}
+#regraSimples {
+	width: 300px;
+	margin: auto auto;
+}
+#regraSimples legend {
+	font-size: 22px;
+	font-weight: bold;
+}
+#regraSimples table {
+	text-align: center;
+	width: 100%;
+	font-size: 22px;
+}
+#regraSimples input {
+	font-family: monospace;
+	font-size: inherit;
+	text-align: center;
+	color: #666;
+	width: 130px;
+}
+#result {
+	font-weight: bold;
+	color: crimson !important;
+}
