@@ -1,18 +1,18 @@
 {
-  "name": "R3 - Regra de Três",
+  "name": "__MSG_name__",
   "version": "0.9",
   "manifest_version": 2,
-  "description": "Pop-up bonitinho pra facilitar a vida de quem vive usando regra de três pra todas as contas do dia-a-dia!",
+  "description": "__MSG_desc__",
   "homepage_url": "https://github.com/igorsantos07/R3Chrome",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "default_locale": "pt",
+  "default_locale": {"name":"en"},
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "Regra de Três",
+    "default_title": "__MSG_title__",
     "default_popup": "r3.html"
   }
 }
