@@ -1,11 +1,11 @@
 {
 	"name": {
-		"message": "R3 - Rule of Three"
+		"message": "R3 - Cross-multiplication"
 	},
 	"desc": {
-	"message": "Pop-up bonitinho pra facilitar a vida de quem vive usando regra de três pra todas as contas do dia-a-dia!"
+	"message": "A cute pop-up to help the routine of those who use cross multiplication for all things in life!"
 	},
 	"title":{
-		"message": "Rule of Three"
+		"message": "Cross-multiplication"
 	}
 }
