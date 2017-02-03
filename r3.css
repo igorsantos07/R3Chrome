@@ -1,13 +1,19 @@
 body {
 	font-family: sans-serif;
+	background-color: #d0d0d0;
 }
 #regraSimples {
 	width: 300px;
 	margin: auto auto;
+	background-color: white;
+	border-radius: 5px;
 }
 #regraSimples legend {
 	font-size: 22px;
 	font-weight: bold;
+	background-color: rgba(255,255,255,0.65);
+	border-radius: 5px;
+	padding: 2px 5px;
 }
 #regraSimples table {
 	text-align: center;
@@ -18,10 +24,21 @@ body {
 	font-family: monospace;
 	font-size: inherit;
 	text-align: center;
-	color: #666;
+	color:  #666;
 	width: 130px;
+	border-radius: 5px;
+	border: 1px solid darkgrey;
+	transition: box-shadow ease 300ms;
+}
+#regraSimples input:focus {
+	outline-width: 0;
+	box-shadow: rgba(0,0,0,0.4) 0 0 7px 0;
 }
 #result {
 	font-weight: bold;
-	color: crimson !important;
+	color: darkOrange !important;
+	background-color: rgba(237, 212, 0, 0.1);
+}
+#result::selection {
+	background-color: rgba(237, 212, 0, 0.8);
 }

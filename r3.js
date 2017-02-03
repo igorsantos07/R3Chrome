@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-	var title = chrome.i18n.getMessage('title')
+	var title = chrome && chrome.i18n && chrome.i18n.getMessage('title') || 'Regra de três'
 	document.getElementsByTagName('title')[0].innerHTML = title
 	document.getElementsByTagName('legend')[0].innerHTML = title
 
@@ -8,11 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		num3	= document.getElementById('num3'),
 		result	= document.getElementById('result'),
 		calc = function() {
-			result.value = (num2.value * num3.value) / num1.value
+			if (num1.value !== '' && num2.value !== '' && num3.value !== '') {
+				result.value = (num2.value * num3.value) / num1.value
+				if (isNaN(result.value)) {
+					result.value = ''
+				}
+			}
 		}
 
-	num1.addEventListener('change', calc)
-	num2.addEventListener('change', calc)
-	num3.addEventListener('change', calc)
-	result.addEventListener('change', calc)
+	num1.addEventListener('keyup', calc)
+	num2.addEventListener('keyup', calc)
+	num3.addEventListener('keyup', calc)
 })
+
+
