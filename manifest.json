@@ -1,7 +1,6 @@
 {
-  "update_url":"http://clients2.google.com/service/update2/crx",
-  "manifest_version": 2,
-  "version": "1.0.2",
+  "manifest_version": 3,
+  "version": "1.0.3",
 
   "name": "__MSG_name__",
   "description": "__MSG_desc__",
@@ -15,7 +14,7 @@
 
   "default_locale": "en",
 
-  "browser_action": {
+  "action": {
     "default_icon": "icons/icon19.png",
     "default_title": "__MSG_title__",
     "default_popup": "r3.html"
