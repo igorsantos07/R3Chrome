@@ -7,32 +7,41 @@ body {
 	margin: auto auto;
 	background-color: white;
 	border-radius: 5px;
-}
-#regraSimples legend {
-	font-size: 22px;
-	font-weight: bold;
-	background-color: rgba(255,255,255,0.65);
-	border-radius: 5px;
-	padding: 2px 5px;
-}
-#regraSimples table {
-	text-align: center;
-	width: 100%;
-	font-size: 22px;
-}
-#regraSimples input {
-	font-family: monospace;
-	font-size: inherit;
-	text-align: center;
-	color:  #666;
-	width: 130px;
-	border-radius: 5px;
-	border: 1px solid darkgrey;
-	transition: box-shadow ease 300ms;
-}
-#regraSimples input:focus {
-	outline-width: 0;
-	box-shadow: rgba(0,0,0,0.4) 0 0 7px 0;
+
+	legend {
+		font-size: 22px;
+		font-weight: bold;
+		background-color: rgba(255,255,255,0.65);
+		border-radius: 5px;
+		padding: 2px 5px;
+	}
+	table {
+		text-align: center;
+		width: 100%;
+		font-size: 22px;
+	}
+	input {
+		font-family: monospace;
+		font-size: inherit;
+		text-align: center;
+		color:  #666;
+		width: 130px;
+		border-radius: 5px;
+		border: 1px solid darkgrey;
+		transition: box-shadow ease 300ms;
+	}
+	input:focus {
+		outline-width: 0;
+		box-shadow: rgba(0,0,0,0.4) 0 0 7px 0;
+	}
+	input[type=number][readonly] {
+		appearance: textfield;
+	}
+	input[type=number][readonly]::-webkit-outer-spin-button,
+	input[type=number][readonly]::-webkit-inner-spin-button {
+		appearance: none;
+		margin: 0;
+	}
 }
 #result {
 	font-weight: bold;
